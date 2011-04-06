@@ -1,6 +1,8 @@
 qrkSD <-
 function(FUN,mu,stdev,n,N,cl,wl,sl,numPlot,seed,rest,drift,spread,start,ENDdr,ENDsp,speed,...)
 {
+ old.par <- par(no.readonly = TRUE)
+ on.exit(par(old.par))
  if(missing(FUN))
    FUN=mean
  if(missing(mu))

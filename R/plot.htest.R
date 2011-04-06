@@ -1,6 +1,8 @@
 plot.htest <-
 function(x,col.region,conf.int,col.conf,border,lwd,pch,...)
  {
+  old.par <- par(no.readonly = TRUE)
+  on.exit(par(old.par))
   if(missing(col.region))
    col.region="lightblue"
   if(missing(conf.int))

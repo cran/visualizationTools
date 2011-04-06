@@ -2,6 +2,8 @@ plot.power.htest <-
 function(x,col,col.line,lwd,main,xlab,ylab,...)
 {
   DB = FALSE
+   old.par <- par(no.readonly = TRUE)
+   on.exit(par(old.par))
    if(missing(x))
     stop('x must be given as an object of class "power.htest"!')
    if(missing(col))

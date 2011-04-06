@@ -3,26 +3,23 @@
 \alias{visualizationTools}
 \docType{package}
 \title{
-Tool for visualizing statistical concepts
+Package contains a few functions to visualize statistical circumstances.
 }
 \description{
 Package contains function to visualize a t-test, the power of a t-test,
-control charts and the influence of regulating them, OC-curves and the 
-Law of large Numbers
+control charts and the influence of regulating them, Oc-curves, 
+the Law of large Numbers and confidence intervals.
 }
 \details{
 \tabular{ll}{
 Package: \tab visualizationTools\cr
 Type: \tab Package\cr
-Version: \tab 0.1\cr
-Date: \tab 2011-01-04\cr
+Version: \tab 0.2\cr
+Date: \tab 2011-04-06\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
 }
 }
-
-\note{This is version 0.1 meaning this is a first draft and there will be most likely changes}
-
 \author{
 Thomas Roth\cr
 Etienne Stockhausen
@@ -73,5 +70,7 @@ Maintainer: \cr
  list(n=100,shape=0.1),list(mean=2,sd=0.1,n=100),
  list(n=100,shape1=1,shape2=2)),
  seed=123,col=c(rep("grey",5),"green")) 
+ par(ask=FALSE)
+ confSim()
  par(ask=TRUE)
 }

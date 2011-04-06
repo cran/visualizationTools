@@ -1,6 +1,8 @@
 LLN <-
 function(n,fun=mean,distr,param,sleep,main,type,xlab,ylab,...)
 {
+ old.par <- par(no.readonly = TRUE)
+ on.exit(par(old.par))
  if(missing(n))
   n=1000
  if(missing(distr))

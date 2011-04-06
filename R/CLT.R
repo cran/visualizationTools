@@ -1,6 +1,8 @@
 CLT <-
 function(fun,type,times,distribution,param,sleep,col,line.col,seed,main)
 {
+ old.par <- par(no.readonly = TRUE)
+ on.exit(par(old.par))
  if(missing(fun))
   fun=mean                                                                                     #setting defaults
  if(missing(type))

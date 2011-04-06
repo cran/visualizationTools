@@ -1,6 +1,8 @@
 ocCurve <-
 function(n,sig.level,alternative,type,distribution,col,xlim,ylim,...)
 {
+ old.par <- par(no.readonly = TRUE)
+ on.exit(par(old.par))
  if(missing(n))
   n=2
  if(missing(sig.level))
