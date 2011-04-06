@@ -22,7 +22,8 @@ CLT(fun, type, times, distribution, param, sleep, col, line.col, seed,
     give the number of runs for creating a population and plotting the histograms.                
 }
   \item{distribution}{
-    gives a vector of used distributions for the population.
+    gives a vector of used distributions for the population. For more information
+    see Details!
 }
   \item{param}{
     a list of list, which contain the paramater for the single distributions given by distribution.
@@ -46,6 +47,23 @@ CLT(fun, type, times, distribution, param, sleep, col, line.col, seed,
 }
 }
 \details{
+ CLT will accept the following distributions:  \cr
+ \itemize{\item \dQuote{beta}                              \cr
+          \item \dQuote{cauchy}                            \cr
+          \item \dQuote{chi-squared}                       \cr
+          \item \dQuote{exponential}                       \cr
+          \item \dQuote{f}                                 \cr
+          \item \dQuote{log-normal}                        \cr
+          \item \dQuote{logistic}                          \cr
+          \item \dQuote{negative binomial}                 \cr
+          \item \dQuote{normal}                            \cr
+          \item \dQuote{poisson}                           \cr
+          \item \dQuote{t}                                 \cr
+          \item \dQuote{weibull}                           \cr
+          \item \dQuote{gamma}                             \cr
+          \item \dQuote{unif}                              \cr
+          \item \dQuote{binomial}
+}    
 \if{html}{
 	The following plot is the output of the function \code{CLT}. The plot is divided
   in two halfs. On the left one are histograms of all single distributions depicted
@@ -102,6 +120,8 @@ function(distribution, type = "r")
     fun = eval(parse(text = paste(type, "gamma", sep = "")))
    if(identical("unif",distribution))
     fun = eval(parse(text = paste(type, "unif", sep = "")))
+   if(identical("binomial",distribution))
+    fun = eval(parse(text = paste(type, "binom", sep = "")))
    return(fun)
 }
 

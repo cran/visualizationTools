@@ -14,7 +14,7 @@ the Law of large Numbers and confidence intervals.
 \tabular{ll}{
 Package: \tab visualizationTools\cr
 Type: \tab Package\cr
-Version: \tab 0.2\cr
+Version: \tab 0.2.01\cr
 Date: \tab 2011-04-06\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
@@ -70,6 +70,8 @@ Maintainer: \cr
  list(n=100,shape=0.1),list(mean=2,sd=0.1,n=100),
  list(n=100,shape1=1,shape2=2)),
  seed=123,col=c(rep("grey",5),"green")) 
+ par(ask=TRUE)
+ plot(0,0,col="white",axes=FALSE,ylab="",xlab="")
  par(ask=FALSE)
  confSim()
  par(ask=TRUE)

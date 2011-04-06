@@ -31,6 +31,8 @@ function(distribution, type = "r")
     fun = eval(parse(text = paste(type, "gamma", sep = "")))
    if(identical("unif",distribution))
     fun = eval(parse(text = paste(type, "unif", sep = "")))
+   if(identical("binomial",distribution))
+    fun = eval(parse(text = paste(type, "binom", sep = "")))
    return(fun)
 }
 
