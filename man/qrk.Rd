@@ -14,9 +14,9 @@ qrk(FUN, mu, stdev, n, N, cl, wl, sl, numPlot, seed, rest, ...)
 \arguments{
   \item{FUN}{
      gives the type of the control chart. The implemented 
-     possibilities are the functions mean, median and sd.
-     For an individual observation chart mean and median can be used but
-     n must be set to \sQuote{1}. Default value is \sQuote{mean}. 
+     possibilities are the functions \code{\link{mean}}, \code{\link{median}} and \code{\link{sd}}.\cr
+     For an individual observation chart \code{\link{mean}} and \code{\link{median}} can be used but
+     \code{n} must be set to \sQuote{1}. Default value is \code{\link{mean}}. 
 }
   \item{mu}{
      is the expected value of the randomised single values 
@@ -44,10 +44,10 @@ qrk(FUN, mu, stdev, n, N, cl, wl, sl, numPlot, seed, rest, ...)
 }
   \item{sl}{
      A vector optional giving the position of the tolerances. By default 
-     \sQuote{FALSE} (not drawn)
+     \sQuote{FALSE} (not drawn).
 }
   \item{numPlot}{
-     gives the number of points visualised on the screen before the points is moving.
+     gives the number of points visualised on the screen before the chart is moving.
      Default value is \sQuote{20}. 
 }
   \item{seed}{

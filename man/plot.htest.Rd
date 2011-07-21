@@ -12,34 +12,38 @@
 }
 \arguments{
   \item{x}{
-  is an object of class \dQuote{htest}
+  is an object of class \code{htest}.
 }
   \item{col.region}{
   is a color string, a numeric value or a function giving
   the color for the visualization of the significance niveau of the test 
-  (type I error).Default value is \sQuote{lightblue} 
+  (type I error).\cr
+  Default value for \code{col.region} is \sQuote{lightblue}. 
 }
   \item{conf.int}{
   is a logical value appropriating whether the confidence intervall
-  calculated by \code{\link{t.test}} is to be drawn. Default value is \sQuote{TRUE}
+  calculated by \code{\link{t.test}} is to be drawn.\cr
+  Default value is \sQuote{TRUE}.
 }
   \item{col.conf}{
   is a color string, a numeric value or a function giving the 
   color for the shading lines, which are showing the confidence intervall 
-  calculated by \code{\link{t.test}}.This variable has no effect if 
-  \sQuote{conf.int} is set as \sQuote{FALSE}. Default value is \sQuote{gray} 
+  calculated by \code{\link{t.test}}.\cr
+  This variable has no effect if \code{conf.int} is set as \sQuote{FALSE}. Default value is \sQuote{gray}. 
 }
   \item{border}{
   is a color string, a numeric value or a function giving
-  the color for the border of the plotted curve. Default value is \sQuote{1}
+  the color for the border of the plotted curve.\cr
+  Default value is \sQuote{1}.
 }
   \item{lwd}{
   is giving the line width of the plotted curve,
-  a _positive_ number, defaulting to \sQuote{1}. Default value is \sQuote{2}
+  a positive number, defaulting to \sQuote{2}.
 }
   \item{pch}{
   is either an integer specifying a symbol or a single character
-  to be used as marking the fitted t-value given by \code{\link{t.test}}
+  to be used as marking the fitted t-value given by \code{\link{t.test}}.\cr
+  By default \code{pch} is set to \sQuote{13}.
 }
   \item{\dots}{
  Other aguments that can be passed to \code{\link{plot}}

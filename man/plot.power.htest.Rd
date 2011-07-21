@@ -5,36 +5,41 @@
 }
 \description{
  This function visualize graphically the power, the type I error and 
- the type II error of a t-test by using the values provided by \code{\link{power.t.test}}. 
+ the type II error of a t-test by using the values provided by \code{power.t.test}. 
 }
 \usage{
 \method{plot}{power.htest}(x, col, col.line, lwd, main, xlab, ylab, ...)
 }
 \arguments{
   \item{x}{
-  is an object of class \dQuote{power.htest}
+  is an object of class \code{power.htest}.
 }
   \item{col}{
  is a vector giving the colors for visualize the type I error, the
- type II error and the power
+ type II error and the power.\cr
+ By default the function will shade the three surfaces in \dQuote{red}, \dQuote{green} and \dQuote{blue}.
 } 
   \item{col.line}{
- is a vector giving the color of the lines of the distribution curves
+ is a vector giving the color of the lines of the distribution curves.\cr
+ By deafualt all lines will be plotted in black.
 }
   \item{lwd}{
- is a vector giving the width of the lines of the distribution curves
+ is a vector giving the width of the lines of the distribution curves.\cr
+ By deafualt all lines will be plotted with the line-width of \sQuote{1}.
 }
   \item{main}{
- giving an overall title for the plot: see \code{\link{title}}
+ giving an overall title for the plot: see \code{\link{title}}.
 }
   \item{xlab}{
- giving a title for the x axis : see \code{\link{title}}   
+ giving a title for the x axis : see \code{\link{title}}.\cr
+ By default \code{xlab} is set to \dQuote{x}.  
 }
   \item{ylab}{
- giving a title for the y axis : see \code{\link{title}} 
+ giving a title for the y axis : see \code{\link{title}}.\cr
+ By default \code{ylab} is set to \dQuote{y}.  
 }
   \item{\dots}{
- Other aguments that can be passed to \code{\link{plot}}
+ Other aguments that can be passed to \code{\link{plot}}.
 }
 }
 \details{

@@ -16,9 +16,9 @@ qrkSD(FUN, mu, stdev, n, N, cl, wl, sl, numPlot, seed, rest,
 \arguments{
   \item{FUN}{
      gives the type of the control chart. The implemented 
-     possibilities are the functions mean, median and sd.
-     For an individual observation chart mean and median can be used but
-     n must be set to \sQuote{1}. Default value is \sQuote{mean}.
+     possibilities are the functions \code{\link{mean}}, \code{\link{median}} and \code{\link{sd}}.
+     For an individual observation chart \code{\link{mean}} and \code{\link{median}} can be used but
+     \code{n} must be set to \sQuote{1}. Default value is \code{\link{mean}}.
 }
   \item{mu}{
      is the expected value of the randomised single values 
@@ -49,7 +49,7 @@ qrkSD(FUN, mu, stdev, n, N, cl, wl, sl, numPlot, seed, rest,
      \sQuote{FALSE} (not drawn).
 }
   \item{numPlot}{
-     gives the number of points visualised on the screen before the points are moving.
+     gives the number of points visualised on the screen before the chart is moving.\cr
      Default value is \sQuote{20}.
 }
   \item{seed}{
@@ -57,7 +57,7 @@ qrkSD(FUN, mu, stdev, n, N, cl, wl, sl, numPlot, seed, rest,
      Default value is \sQuote{125879}.
 }
   \item{rest}{
-     Value for \code{\link{Sys.sleep}} i.e. break time in seconds between the plotting of the points.
+     Value for \code{\link{Sys.sleep}} i.e. break time in seconds between the plotting of the points.\cr
      Default value is \sQuote{0.1}.
 }
   \item{drift}{
@@ -69,24 +69,25 @@ qrkSD(FUN, mu, stdev, n, N, cl, wl, sl, numPlot, seed, rest,
      Default value is \sQuote{FALSE}.
 }
   \item{start}{
-     A numeric value between 0 and 1. \sQuote{start} gives the percentage of passed 
-     plotted points after which a spread and/ or  drift should be initialized. 
-     \sQuote{start} has no effect if both parameter \sQuote{spread} and \sQuote{drift}
-     are set as \sQuote{FALSE}. Default value is \sQuote{0}.
+     A numeric value between 0 and 1. \code{start} gives the percentage of passed 
+     plotted points after which a spread and/ or  drift should be initialized.\cr 
+     \code{start} has no effect if both parameter \code{spread} and \code{drift}
+     are set as \sQuote{FALSE}.\cr
+     Default value is \sQuote{0}.
 }
   \item{ENDdr}{
-     A positive numeric value. \sQuote{ENDdr} factorised with \sQuote{stdev}
-     gives the value on which the drift will be end if the mean reaches there. 
+     A positive numeric value. \code{ENDdr} factorised with \code{stdev}
+     gives the value on which the drift will be end if the mean reaches there.\cr 
      Default value is \sQuote{0}. 
 }
   \item{ENDsp}{
-     A positive numeric value. \sQuote{ENDdr} factorised with \sQuote{stdev}
+     A positive numeric value. \code{ENDdr} factorised with \code{stdev}
      gives the value on which the spread will be end if the standard deviation 
-     reaches there. Default value is \sQuote{0}. 
+     reaches there.\cr
+     Default value is \sQuote{0}. 
 }
   \item{speed}{
-     A postive numeric value. Controls as a factor the speed of the spread and/
-     or the drift.
+     A postive numeric value. Controls - as a factor - the speed of the spread and/or the drift.
 }
   \item{\dots}{
      Further graphical parameters see \code{\link{par}}

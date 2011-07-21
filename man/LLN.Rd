@@ -13,34 +13,40 @@ LLN(n, fun = mean, distr, param, sleep, main, type, xlab, ylab, ...)
 }
 \arguments{
   \item{n}{
-  is a single value that gives the number of random values. 
+  is a single value that gives the number of random values.\cr
+  By default \code{n} is set to \sQuote{1000}. 
 }
   \item{fun}{
-  gives the function that is applied to the population given by distribution.
+  gives the function that is applied to the population given by distribution.\cr
+  By default \code{fun} is set to \code{\link{mean}}.
 }
   \item{distr}{
   is a string that gives the type of distribution for the random population. For further information 
-  see \sQuote{Details}.
+  see Details.
 }
   \item{param}{
   is a list that gives the parameters needed to specify the distribution. Notice that the number
   of observations \sQuote{n} is the same as the above and must not be specified in that list anymore!
 }
   \item{sleep}{
-  is a single value and gives the time in seconds the system will pause between plotting two values. Variable for
- the internal usage of \code{\link{Sys.sleep}}.
+  is a single value and gives the time in seconds the system will pause between plotting two values.\cr Variable for
+  the internal usage of \code{\link{Sys.sleep}}. By default set to \sQuote{0}.
 }
   \item{main}{
-  is an optional string and gives an overall title for the plot: see \sQuote{title}
+  is an optional string and gives an overall title for the plot: see \sQuote{title}.\cr
+  By default \code{main} is set to \dQuote{Visualization: Law of Large Numbers}.
 }
   \item{type}{
-  is an optional string and gives the type for the plot: see \code{\link{plot}}
+  is an optional string and gives the type for the plot: see \code{\link{plot}}.\cr
+  By default \code{type} is set to \dQuote{l}.
 }
   \item{xlab}{
-  is an optional string and gives a title for the x axis: see \sQuote{title}
+  is an optional string and gives a title for the x axis: see \sQuote{title}.
+  By default \code{xlab} is set to \dQuote{n}.
 }
   \item{ylab}{
-  is an optional string and gives a title for the y axis: see \sQuote{title}
+  is an optional string and gives a title for the y axis: see \sQuote{title}. \cr
+  By default \code{ylab} is created internally depending on \code{fun}.
 }
   \item{\dots}{
  Arguments to be passed to methods, such as graphical parameters (see \sQuote{par}).

@@ -13,33 +13,38 @@ ocCurve(n, sig.level, alternative, type, distribution, col, xlim,
 \arguments{
   \item{n}{
   can be a single value or a vector of vealues giving the number of observations
-  per group: see \code{\link{power.t.test}}
+  per group: see \code{\link{power.t.test}}.\cr
+  By default \code{n} is set to \sQuote{2}.
 }
   \item{sig.level}{
   a single value giving the significance level (Type I error probability) 
-  for the test: see \code{\link{power.t.test}}
+  for the test: see \code{\link{power.t.test}}.\cr
+  By default \code{sig.level} is set to \sQuote{0.05}.
 }
   \item{alternative}{
   is a char value giving the alternative (one- or two sided) 
-  for the test: see \code{\link{power.t.test}}
+  for the test: see \code{\link{power.t.test}}.
+  By default \code{alternative} is set to \sQuote{two.sided}.
 }
   \item{type}{
   is a char value giving the type (one- or two sample,paired) 
-  for the test: see \code{\link{power.t.test}}
+  for the test: see \code{\link{power.t.test}}.\cr
+  By default \code{type} is set to \sQuote{two.sample}.
 }
   \item{distribution}{
-  is a char value indicating the test-procedure used to get the plotting-values.
-  Further information see Note. 
+  is a char value indicating the test-procedure used to get the plotting-values.\cr
+  Further information see Note. By default \code{distribution} is set to \dQuote{t}.
 }
   \item{col}{
- \sQuote{col} a vector of colors for the plotted oc-curves.
+  is a vector of colors for the plotted oc-curves. By default all curves will be black.
 }
   \item{xlim}{
   giving the x limits (x1, x2) of the plot.
-  Note that x1 > x2 is allowed and leads to a \sQuote{reversed axis}.
+  Note that x1 > x2 is allowed and leads to a \sQuote{reversed axis}. \cr
+  By default the x range is between \sQuote{0} and \sQuote{3}.
 }
   \item{ylim}{
-  giving the y limits of the plot.
+  giving the y limits of the plot. By default the y range is between \sQuote{0} and \sQuote{1}.
 }
   \item{\dots}{
  other graphical parameters (see \code{\link{par}}).

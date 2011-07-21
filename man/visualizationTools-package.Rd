@@ -14,7 +14,7 @@ the Law of large Numbers and confidence intervals.
 \tabular{ll}{
 Package: \tab visualizationTools\cr
 Type: \tab Package\cr
-Version: \tab 0.2.03\cr
+Version: \tab 0.2.04\cr
 Date: \tab 2011-07-21\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr

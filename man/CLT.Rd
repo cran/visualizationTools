@@ -13,31 +13,34 @@ CLT(fun, type, times, distribution, param, sleep, col, line.col, seed,
 }
 \arguments{
   \item{fun}{
-    gives the function that is applied to the population of distributions given by distribution.
+    gives the function that is applied to the population of distributions given by distribution.\cr
+    By default \code{fun} is set to \code{\link{mean}}.
 }
   \item{type}{
-    gives the type of the histogram. It can be \dQuote{density} or \dQuote{counts}.
+    gives the type of the histogram. It can be \dQuote{density} (default) or \dQuote{counts}.
 }
   \item{times}{
-    give the number of runs for creating a population and plotting the histograms.                
+    give the number of runs for creating a population and plotting the histograms.\cr
+    By default \code{times} is set to \sQuote{500}.                
 }
   \item{distribution}{
-    gives a vector of used distributions for the population. For more information
-    see Details!
+    gives a vector of used distributions for the population. For more information which values can be used see Details!
 }
   \item{param}{
-    a list of list, which contain the paramater for the single distributions given by distribution.
-    Even if distribution has length = 1, param has to be a list of a single list!
+    a list of list, which contain the paramater for the single distributions given by distribution.\cr
+    Even if distribution has length = 1, param has to be a list containing a single list!
 }
   \item{sleep}{
     a single value giving the time in seconds between the single plots of the histogram. Variable for the command
-    \code{\link{Sys.sleep}}.
+    \code{\link{Sys.sleep}}. \cr
+    By default \code{sleep} is set to \sQuote{0}.
 }
   \item{col}{
     a vector giving the colors of all plotted histograms.
 }
   \item{line.col}{
-    color of the plotted density line (only if type="density").
+    color of the plotted density line (only if type=\dQuote{density}).\cr
+    By default \code{lin.col} is set to \dQuote{red}.
 }
   \item{seed}{
     value for the command \code{\link{set.seed}}.
