@@ -14,8 +14,8 @@ the Law of large Numbers and confidence intervals.
 \tabular{ll}{
 Package: \tab visualizationTools\cr
 Type: \tab Package\cr
-Version: \tab 0.2.01\cr
-Date: \tab 2011-04-06\cr
+Version: \tab 0.2.02\cr
+Date: \tab 2011-07-21\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
 }
@@ -54,6 +54,7 @@ Maintainer: \cr
  po=power.t.test(n=30,delta=7,sd=12,sig.level=0.05,type="one.sample",
                  alternative="one.sided")
  plot(po,main="one.sample one.sided")
+ plot(0,0,col="white",axes=FALSE,ylab="",xlab="")
  par(ask=FALSE)
  qrk(type="o",pch=20,n=5,FUN=mean,N=250,rest=0)
  par(ask=TRUE)

@@ -117,10 +117,9 @@ return(k)
 plot.power.htest <-
 function(x,col,col.line,lwd,main,xlab,ylab,...)
 {
-   set.seed(12345)
-   DB = FALSE
-   old.par <- par(no.readonly = TRUE)
-   on.exit(par(old.par))
+  DB = FALSE
+#   old.par <- par(no.readonly = TRUE)
+#   on.exit(par(old.par))
    if(missing(x))
     stop('x must be given as an object of class "power.htest"!')
    if(missing(col))
@@ -219,8 +218,8 @@ function(x,col,col.line,lwd,main,xlab,ylab,...)
   if(DB==FALSE)
   {
    legend("topright",legend=c(c(expression(bold("Type I error:")),x$sig.level,
-          expression(bold("Type II error:")),paste(round(1-x$power,7),"(", round(1-x$power,2),")"),
-          expression(bold("Power:")),paste(round(x$power,7),"(", round(x$power,2),")"))),
+          expression(bold("Type II error:")),paste(round(1-x$power,6),"(", round(1-x$power,4)*100,")"),
+          expression(bold("Power:")),paste(round(x$power,6),"(", round(x$power,4)*100,")"))),
           fill=c(col[1],0,col[2],0,col[3],0),y.intersp=1,inset=0.04,border=c(1,0,1,0,1,0))
   }
  invisible()
@@ -247,7 +246,10 @@ function(x,col,col.line,lwd,main,xlab,ylab,...)
  There are minor deviations between the calculated value and the plotted value of the power
  which are insignificant.\cr
  The function can be used with very small deviations to visualize the power of t-tests
- with sample numbers n greater 30. 
+ with sample numbers n greater 10. 
+ For smaller sample numbers this function does not deliver right visualizations, especially for
+ type one.sample! Please consider this, if you want to visualize the power of a t-test.
+ 
 }
 \seealso{
  \code{\link{title}}\cr 
