@@ -419,7 +419,7 @@ function(FUN,mu,stdev,n,N,cl,wl,sl,numPlot,seed,rest,drift,spread,start,ENDdr,EN
    }
 
   Sys.sleep(rest)                                                               #System take a break for better visualisation
-  close.screen(all=TRUE)
+  close.screen(all.screens=TRUE)
  }
 
 if(length(Value)!=length(temp))

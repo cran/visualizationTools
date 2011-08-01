@@ -14,8 +14,8 @@ the Law of large Numbers and confidence intervals.
 \tabular{ll}{
 Package: \tab visualizationTools\cr
 Type: \tab Package\cr
-Version: \tab 0.2.04\cr
-Date: \tab 2011-07-21\cr
+Version: \tab 0.2.05\cr
+Date: \tab 2011-08-01\cr
 License: \tab GPL version 2 or newer\cr
 LazyLoad: \tab yes\cr
 }
@@ -25,7 +25,6 @@ Thomas Roth\cr
 Etienne Stockhausen
 
 Maintainer: \cr
- T. Roth <thomas.roth@tu-berlin.de> \cr
  E. Stockhausen <stocdarf@mailbox.tu-berlin.de>
 }
 \references{

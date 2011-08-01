@@ -288,7 +288,7 @@ function(FUN,mu,stdev,n,N,cl,wl,sl,numPlot,seed,rest,...)
 
 
   Sys.sleep(rest)                                                               #System take a break for better visualisation
-  close.screen(all=TRUE)
+  close.screen(all.screens=TRUE)
  }
 
 if(length(Value1)!=length(temp1))

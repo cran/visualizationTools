@@ -1,12 +1,13 @@
-a72c4b6662bef8f7fa7577c78cba35a6 *DESCRIPTION
+540e2cec1fa5c31ba3a414380c5437c7 *DESCRIPTION
+5c6ca51f942f5cf2b679c031cef4f9d1 *NAMESPACE
 7d4ddb92d745578697f4da86892f3a6d *R/CLT.R
 97d604c805cea6442b25772dd6bba0f7 *R/LLN.R
 8022d66954e6e577f61086ec70f0182c *R/confSim.R
 2d6684c8a8008196f9df74a3d4f2c124 *R/ocCurve.R
 6bcf97937c0b7970a12b5328467f7d10 *R/plot.htest.R
 89aa2920bed95cef6fbafa952107c1ad *R/plot.power.htest.R
-1e1d8a8a40c043471db1b7b4d3874066 *R/qrk.R
-18d8f30c8b9c199e85111105917816d1 *R/qrkSD.R
+7499b53aef52f8f3925c34bee167004b *R/qrk.R
+cdcad527b706bc00133ade1e48b855a1 *R/qrkSD.R
 d66772a3e364c800b3c1193a33259c81 *R/visualizationTools-internal.R
 2a66e4b3841b43108558fa7a9ceb44d8 *build/visualizationTools.pdf
 21f0ae16858bd5585070cc9085f0640d *inst/doc/CLT.png
@@ -27,4 +28,4 @@ b18397f015d4c4a0f45fdc4419b5a608 *inst/doc/confSim.png
 1bb5e826aa97c9d502cad3910ac3bf2a *man/qrk.Rd
 b2ed926f1d4e959e454e17e467886692 *man/qrkSD.Rd
 eb54ed3193770fec54c8f087f86b8ed5 *man/visualizationTools-internal.Rd
-a3518cc990684b137271562169386844 *man/visualizationTools-package.Rd
+b2a3aa31f622d56f0477e9dd41cad91f *man/visualizationTools-package.Rd
